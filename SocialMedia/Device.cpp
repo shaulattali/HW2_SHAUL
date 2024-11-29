@@ -5,7 +5,7 @@
 // This Function Initialized The Device
 // Input: The ID, The Device Type And The os
 // Output: None
-void Device::init(const unsigned int id, const DeviceType type, const std::string os)
+void Device::init(const unsigned int id, const DeviceType type, const std::string& os)
 {
 	this->_id = id;
 	this->_type = type;
@@ -42,7 +42,7 @@ std::string Device::getOS() const
 // Output: True Or False
 bool Device::isActive() const
 {
-	return this->_active;
+	return _active;
 }
 
 // This Function Make The Device Active
