@@ -49,10 +49,5 @@ void Page::setStatus(std::string status)
 // Output: None
 void Page::addLineToPosts(std::string new_line)
 {
-	// I'm adding a new line (if there are already posts)
-	if (!_post.empty())
-	{
-		_post += "\n";
-	}
-	_post += new_line;
+	this->_post += new_line + "\n";
 }
